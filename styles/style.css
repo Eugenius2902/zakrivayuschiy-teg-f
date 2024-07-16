@@ -18,4 +18,80 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-variation-settings: var(--main-font-weight-text);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Header*/
+
+.header {
+  inline-size: var(--main-section-inline-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  margin: 100px auto;
+  padding-block-start: clamp(120px, calc(120px + 0.1rem), 136px);
+  padding-block-end: 25px;
+  
+  background-color: var(--bg-color);
+  font-family: var(--font-accent);
+}
+
+ .header__link {
+  margin-block-end: 20px;
+  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.header__title {
+  font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  margin: 20px auto 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  inline-size: min-content;
+  
+}
+.theme-menu__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.theme-menu__button:disabled {}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  inset-inline-start: -20px;
+}
+.theme-menu__button::before {}
+.theme-menu__button:hover {}
+.theme-menu__button::after {}
+.theme-menu__button:focus {}
+.theme-menu__button:focus-visible{}
+
+/*Main*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  inline-size: var(--main-section-inline-size);
 }

@@ -36,7 +36,7 @@
   align-items: center;
   border: var(--border);
   margin: 100px auto;
-  padding-block-start: 137px;
+  padding-block-start: clamp(7.5rem, 1.596vw + 7.126rem, 8.563rem);
   padding-block-end: 21px;
   background-color: var(--bg-color);
   font-family: var(--font-accent);
@@ -465,7 +465,7 @@
 
 /* Media*/
 
-@media (width < 376px) {
+@media (width <= 375px) {
   .header {
     padding-block-start: 120px;
   }

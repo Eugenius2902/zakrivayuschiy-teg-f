@@ -6,4 +6,5 @@
   --main-section-inline-size: clamp(min(100%, 375px), 30.516vw + 16.285rem, 700px);
   --border: 2px solid var(--main-color);
   --heart-color: red;
+  --accent-font-size: 14px;
 }
